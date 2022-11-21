@@ -1,0 +1,19 @@
+.policy {
+    padding: 20px;
+    h1 {
+        font-weight: bold;
+
+    }
+    h2 {
+        margin-top: 24px;
+        font-weight: normal;
+    }
+    &__descr {
+        margin-top: 24px;
+    }
+    ol {
+        margin: 24px 0 0 40px;
+        list-style-type: none;
+        line-height: 35px;
+    }
+}
