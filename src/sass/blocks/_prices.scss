@@ -5,7 +5,7 @@
         margin-top: 60px;
         padding: 0 60px;
         display: grid;
-        grid-template: repeat(3, minmax(45px, auto)) / repeat(2, 365px);
+        grid-template: repeat(2, minmax(45px, auto)) / repeat(2, 365px);
         grid-auto-rows: minmax(45px, auto);
         row-gap: 15px;
         justify-content: space-between;

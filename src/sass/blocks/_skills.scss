@@ -50,7 +50,7 @@
                 justify-content: space-between;
                 @include before-circle;
                 &:before {
-                    top: 04px;
+                    top: 0;
                     left: 0;
                 }
             }
