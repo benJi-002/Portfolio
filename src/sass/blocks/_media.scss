@@ -62,6 +62,22 @@
             grid-template-columns: repeat(2, 239px);
             gap: 25px;
         }
+        label.error {
+            font-size: 11px;
+        }
+        #name-error {
+            left: 57px;
+        }
+        #email-error {
+            left: 44px;
+        }
+        #text-error {
+            left: 308px;
+        }
+        #checkbox-error {
+            left: 233px;
+            top: 294px;
+        }
     }
 }
 
@@ -130,6 +146,22 @@
         }   
         &__policy {
             font-size: 10px;
+        }
+        label.error {
+            font-size: 11px;
+        }
+        #name-error {
+            left: 163px;
+        }
+        #email-error {
+            left: 149px;
+        }
+        #text-error {
+            left: 149px;
+        }
+        #checkbox-error {
+            left: 177px;
+            top: 364px;
         }
     }
 }
@@ -208,6 +240,22 @@
         }
         &__photo {
             display: none;
+        }
+        label.error {
+            font-size: 11px;
+        }
+        #name-error {
+            left: 168px;
+        }
+        #email-error {
+            left: 155px;
+        }
+        #text-error {
+            left: 155px;
+        }
+        #checkbox-error {
+            left: 179px;
+            top: 364px;
         }
     }
 }
@@ -297,6 +345,22 @@
         }
         &__btn {
             margin-top: 20px;
+        }
+        label.error {
+            font-size: 11px;
+        }
+        #name-error {
+            left: 117px;
+        }
+        #email-error {
+            left: 104px;
+        }
+        #text-error {
+            left: 104px;
+        }
+        #checkbox-error {
+            left: 51px;
+            top: 314px;
         }
     }
     .pageup {

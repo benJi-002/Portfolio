@@ -36,6 +36,7 @@
         }
     }
     &__form {
+        position: relative;
         margin-top: 30px;
         display: grid;
         grid-template: 45px 190px 45px / repeat(2, 280px);
@@ -51,6 +52,34 @@
             background-color: #fff;
             top: -9px;
             left: 17px;
+        }
+        .error {
+            border: 2px solid $main;
+        }
+        label.error {
+            padding: 0;
+            border: none;
+            top: 13px;
+            font-weight: bold;
+            color: $main;
+        }
+        #name-error {
+            left: 84px;
+        }
+        #email-error {
+            left: 69px;
+        }
+        #text-error {
+            left: 375px;
+        }
+        #checkbox-error {
+            width: 28px;
+            height: 28px;
+            background-color: unset;
+            border: 2px solid $main;
+            left: 256px;
+            top: 297px;
+            z-index: -1;
         }
     }
     &__triggers {

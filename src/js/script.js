@@ -47,3 +47,64 @@ $("a").on('click', function(event) {
 });
 
 new WOW().init();
+
+//Form validation
+$(document).ready(function(){
+
+  function valideForms(form){
+    $(form).validate({
+      rules: {
+        name: {
+          required: true,
+          minlength: 2
+        },
+        email: {
+          required: true,
+          email: true
+        },
+        text: {
+          required: true,
+          minlength: 2
+        },
+          checkbox: "required"
+      },
+      messages: {
+        name: {
+          required: "Пожалуйста, введите своё имя",
+          minlength: jQuery.validator.format("Введите минимум {0} символа!")
+        },
+        email: {
+          required: "Пожалуйста, введите свою почту",
+          email: "Неправильно введен адрес почты"
+        },
+        text: {
+          required: "Пожалуйста, введите сообщение",
+          minlength: jQuery.validator.format("Введите минимум {0} символа!")
+        },
+        checkbox: ""
+      }  
+    });
+  };
+
+  valideForms('#contacts-form');
+
+  $('form').submit(function(e) {
+    e.preventDefault();
+
+    if(!$(this).valid()) {
+      return;
+    }
+
+    $.ajax ({
+      type:"POST",
+      url: "mailer/smart.php",
+      data: $(this).serialize()
+    }).done(function() {
+      $(this).find("input").val("");
+
+      $('form').trigger('reset');
+    });
+    return false;
+  });
+
+});
