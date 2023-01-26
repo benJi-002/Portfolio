@@ -1,16 +1,18 @@
 .promo {
     min-height: 100vh;
     position: relative;
-    background: url('../img/main_bg.jpg') no-repeat 50%/cover;
+    background: url('../img/main_bg_2.jpg') no-repeat 50%/cover;
     padding-top: 205px;
     &__title {
         width: 535px;
         margin-top: 10px;
+        color: rgb(233, 233, 233);
     }
     &__subtitle {
         position: relative;
         padding-left: 10px;
         z-index: 2;
+        color: rgb(233, 233, 233);
         @include before_circle;
     }
     &__btns {
@@ -19,13 +21,14 @@
         width: 250px;
         align-items: center;
         justify-content: space-between;
+
     }
     &__link {
-        color: #000;
+        color: rgb(233, 233, 233);
         font-weight: bold;
         border-radius: 10px;
         &:hover {
-            color: #000;
+            color: #fff;
             text-decoration: none;
         }
     }

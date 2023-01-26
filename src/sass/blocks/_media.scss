@@ -191,6 +191,7 @@
         }
         &__skills {
             grid-template-columns: repeat(2, 260px);
+            grid-template-rows: 1fr;
             &-item {
                 grid-template-columns: 40px 200px;
                 column-gap: 20px;
@@ -284,7 +285,7 @@
         }
     }
     .promo {
-        background: url('../img/main_bg.jpg') no-repeat 57%/cover;
+        background: url('../img/main_bg_2.jpg') no-repeat 57%/cover;
         &__btns {
             margin-top: 30px;
         }
